@@ -3,10 +3,10 @@
 cat <<EOF > pushit
 #!/bin/bash
 
+read -p "Enter a commit message: " commit_message
+
 git add -A
-echo "Enter commit title: "
-read commit_title
-git commit -m "$commit_title"
+git commit -m "\$commit_message"
 git push
 EOF
 
