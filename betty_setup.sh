@@ -33,3 +33,5 @@ EOF
 chmod 755 betty
 
 mv betty /bin
+
+rm -r Betty
