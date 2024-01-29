@@ -25,8 +25,8 @@ fi
 
 for argument in "\$@" ; do
     echo -e "\n========== \$argument =========="
-    \${BIN_PATH}/${BETTY_STYLE} "\$argument"
-    \${BIN_PATH}/${BETTY_DOC} "\$argument"
+    \${BIN_PATH}/\${BETTY_STYLE} "\$argument"
+    \${BIN_PATH}/\${BETTY_DOC} "\$argument"
 done
 EOF
 
